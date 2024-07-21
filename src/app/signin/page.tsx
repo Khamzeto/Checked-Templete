@@ -1,5 +1,5 @@
 import React from 'react';
-import ThemeToggle from './components/ThemeToggle/ThemeToggle';
+
 import Input from '../components/ui/Input/Input';
 import Button from '../components/ui/Button/Button';
 import styles from './Auth.module.css';
@@ -17,14 +17,12 @@ export default function Auth() {
             type="email"
             placeholder="abc@email.com"
             icon="email"
-            label=""
             className={styles.input}
           />
           <Input
             type="password"
             placeholder="Your password"
             icon="password"
-            label=""
             className={styles.input}
           />
         </div>

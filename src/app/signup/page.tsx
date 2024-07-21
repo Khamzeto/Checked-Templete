@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import styles from './Registration.module.css';
 import Input from '../components/ui/Input/Input';
 import Button from '../components/ui/Button/Button';
@@ -32,28 +31,24 @@ const Registration = () => {
             type="text"
             placeholder={t('registration.username') || ''}
             icon="user"
-            label=""
             className={styles.input}
           />
           <Input
             type="email"
             placeholder={t('registration.email') || ''}
             icon="email"
-            label=""
             className={styles.input}
           />
           <Input
             type="password"
             placeholder={t('registration.password') || ''}
             icon="password"
-            label=""
             className={styles.input}
           />
           <Input
             type="password"
             placeholder={t('registration.confirmPassword') || ''}
             icon="password"
-            label=""
             className={styles.input}
           />
         </div>

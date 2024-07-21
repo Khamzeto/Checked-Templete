@@ -9,6 +9,7 @@ interface InputProps {
   type: string;
   placeholder: string;
   icon?: 'email' | 'password' | 'user';
+  className?: string; // Add className to the props
 }
 
 const iconMap = {
@@ -17,12 +18,12 @@ const iconMap = {
   user: faUser,
 };
 
-const Input = ({ type, placeholder, icon }: InputProps) => {
+const Input = ({ type, placeholder, icon, className }: InputProps) => {
   const { theme } = useTheme();
   const iconStyle = theme === 'light' ? styles.iconLight : styles.iconDark;
 
   return (
-    <div className={styles.inputContainer}>
+    <div className={`${styles.inputContainer} ${className}`}>
       {icon && (
         <div className={`${styles.icon} ${iconStyle}`}>
           <FontAwesomeIcon icon={iconMap[icon]} />

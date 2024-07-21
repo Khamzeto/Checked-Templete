@@ -3,7 +3,7 @@ import { createContext, useState, useContext, useEffect } from 'react';
 
 const ThemeContext = createContext({ theme: 'light', toggleTheme: () => {} });
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -26,11 +26,7 @@ export const ThemeProvider = ({ children }) => {
     });
   };
 
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={theme}>{children}</div>
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={{ theme, toggleTheme }}></ThemeContext.Provider>;
 };
 
 export const useTheme = () => useContext(ThemeContext);
