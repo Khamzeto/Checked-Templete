@@ -1,0 +1,11 @@
+{
+  "registration": "Регистрация",
+  "yourUsername": "Ваше имя пользователя",
+  "yourEmail": "Ваш email",
+  "yourPassword": "Ваш пароль",
+  "confirmPassword": "Подтвердите пароль",
+  "register": "ЗАРЕГИСТРИРОВАТЬСЯ",
+  "or": "или",
+  "alreadyHaveAccount": "Уже есть аккаунт?",
+  "signin": "Войти"
+}
